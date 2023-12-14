@@ -109,6 +109,15 @@ Existem duas formas de executar o projeto, sendo em ambiente local de desenvolvi
     (venv) $ pip install -r requirements.txt
     ```
 
+#### Definindo variável de ambiente
+
+1. Defina as variáveis de ambiente *BASIC_AUTH_USERNAME*  e *BASIC_AUTH_PASSWORD*.
+
+```bash
+$ export BASIC_AUTH_USERNAME=user
+$ export BASIC_AUTH_PASSWORD=password
+```
+
 #### Executando em desenvolvimento
 
 1. Crie uma cópia do arquivo *_.env.example_*  dê o nome de *_.env_* e preencha os valores corretos para as variáveis de ambiente.
@@ -116,7 +125,7 @@ Existem duas formas de executar o projeto, sendo em ambiente local de desenvolvi
 2. Execute o comando de execução do Flask:
 
 ```bash
-flask run
+$ flask run
 ```
 
 #### Executando em produção [em construção]
