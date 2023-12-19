@@ -5,12 +5,12 @@ from flask_basicauth import BasicAuth
 from textblob import TextBlob
 import os
 
-modelo = pickle.load(open('models/modelo.sav', 'rb'))
+modelo = pickle.load(open('../../models/modelo.sav', 'rb'))
 colunas = ['tamanho', 'ano', 'garagem']
 
 
 app = Flask(__name__)
-
+print(os.environ.get('BASIC_AUTH_USERNAME'))
 app.config['BASIC_AUTH_USERNAME'] = os.environ.get('BASIC_AUTH_USERNAME')
 app.config['BASIC_AUTH_PASSWORD'] = os.environ.get('BASIC_AUTH_PASSWORD')
 
